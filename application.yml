@@ -1,3 +1,12 @@
+server:
+  port: 7001
 spring:
   application:
-    name: euraka-server
+    name: cloud-serviceA
+#eureka - 注册服务
+eureka:
+  instance:
+    instance-id: 127.0.0.1:7001
+  client:
+    serviceUrl:
+      defaultZone: http://127.0.0.1:9100/eureka/
