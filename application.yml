@@ -10,8 +10,8 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://127.0.0.1:9100/eureka/
- #2.0新配置
- management:
+
+management:
   endpoints:
     web:
       exposure:
