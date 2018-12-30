@@ -10,6 +10,9 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://127.0.0.1:9100/eureka/
-management:
-  security:
-    enabled: false
+ #2.0新配置
+ management:
+  endpoints:
+    web:
+      exposure:
+        include: bus-refresh
